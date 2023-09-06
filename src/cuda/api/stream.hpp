@@ -749,7 +749,7 @@ inline void copy_attributes(const stream_t& dest, const stream_t& src)
 {
 #ifndef NDEBUG
 	if (dest.device() != src.device()) {
-		throw std::invalid_argument("Attempt to copy attributes between streams on different devices");
+        throw ::std::invalid_argument("Attempt to copy attributes between streams on different devices");
 	}
 #endif
 	device::current::scoped_override_t set_device_for_this_scope(dest.device());

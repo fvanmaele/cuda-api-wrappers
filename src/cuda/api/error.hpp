@@ -318,7 +318,7 @@ namespace detail_ {
 
 inline ::std::string identify(id_t id)
 {
-	return ::std::string("device ") + std::to_string(id);
+	return ::std::string("device ") + ::std::to_string(id);
 }
 
 } // namespace detail
